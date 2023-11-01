@@ -1,0 +1,71 @@
+.tieWraper {
+  position: absolute;
+  right: -1.5rem;
+  top: 5rem;
+  z-index: 2;
+  filter: drop-shadow(12px 8px 20px rgba(0, 0, 0, 0.25));
+}
+
+.blackTie {
+  width: 500px;
+  height: 170px;
+  background-color: #003838;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  transform: rotate(170deg);
+}
+
+.contentTie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  transform: rotate(180deg);
+  padding-left: 60px;
+  padding-right: 20px;
+}
+
+.textsAndButton {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.textsAndButton h3 {
+  color: #F5F1ED;
+  font-family: Poppins;
+  font-size: 17px;
+  word-wrap: break-word;
+  font-style: normal;
+  width: 80%;
+  font-weight: 600;
+  letter-spacing: 1.28px;
+}
+
+.textsAndButton p {
+  font-family: Poppins;
+  color: #F5F1ED;
+  word-wrap: break-word;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  font-size: 12px;
+}
+
+.textsAndButton button a {
+  outline: none;
+  border: none;
+  color: #017D7F;
+  border-radius: 15px;
+  background: #F5F1ED;
+  padding: 6px 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 40%;
+}
+
+.textsAndButton button a:hover {
+  background: rgba(245, 241, 237, 0.85);
+  transition: all 0.5s ease-out;
+}

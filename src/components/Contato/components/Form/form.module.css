@@ -1,0 +1,102 @@
+.containerContact {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.10) 100%);
+  width: 1200px;
+  height: 550px;
+  border-radius: 40px;
+  padding: 16px 32px;
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.50);
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.text {
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  width: 75%;
+}
+
+.text p {
+  font-weight: 400;
+}
+
+.text span {
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formbox {
+  width: 420px;
+  height: 320px;
+  padding: 4px 0;
+}
+
+.formbox input {
+  text-indent: 16px;
+  width: 420px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.formbox textarea {
+  text-indent: 12px;
+  padding: 6px 0;
+  vertical-align: top;
+  width: 460px;
+  max-height: 110px;
+  height: 110px;
+  border-radius: 10px;
+}
+
+.formbox input, .formbox textarea {
+  margin: 8px 0;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.submitButton {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.submitButton button{
+  background-color: var(--text-color);
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  font-size: 1em;
+  font-weight: 600;
+  color: #017D7F;
+  cursor: pointer;
+}
+
+.submitButton button:hover {
+  background-color: var(--text-color-hover);
+  transition: background-color 0.3s ease-in;
+}

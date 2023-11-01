@@ -1,0 +1,142 @@
+.headerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(0deg, rgba(1, 58, 58, 0.05) 0%, rgba(255, 255, 255, 0.00) 0.01%, rgba(255, 255, 255, 0.20) 113.6%);
+}
+
+.menuItens{
+  max-width: 1080px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 4rem;
+}
+
+.menuItens li {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menuItens li a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.headerMenu ul li a:hover,
+.headerMenu ul li a:hover svg {
+  transition: all 0.2s ease-in-out;
+  color: var(--text-color-hover);
+  fill: var(--text-color-hover);
+}
+
+.headerMenu ul li a span {
+  margin-left: calc(0.5 * var(--px-size));
+}
+
+#LogoPetHeader {
+  transform: scale(0.9);
+  transition: all 0.2s;
+}
+
+#LogoPetHeader:hover {
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none; 
+  width: 160px;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdownContent li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.dropdownContent li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdownContent li:hover {
+  background-color: #026465;
+}
+
+.dropdownContent a {
+  text-decoration: none;
+  color: #2e0909;
+  display: block;
+}
+
+.dropdownContent a span {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.subDropdown {
+  display: none;
+  position: absolute;
+  right: -10rem;
+  top: 0;
+  width: 160px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.subDropdown li {
+  padding: 6 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.subDropdown li:hover {
+  background-color: #026465;
+}
+
+.subDropdown li a{
+  text-decoration: none;
+  color: #f3f3f3;
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.dropdownContent li:nth-child(1):hover .subDropdown{
+  display: block;
+}
+
+.dropdownContent li:nth-child(2):hover .subDropdown{
+  display: block;
+}
+
+.dropdownContent li:nth-child(3):hover .subDropdown{
+  display: block;
+}

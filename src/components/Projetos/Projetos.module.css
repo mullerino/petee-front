@@ -1,0 +1,154 @@
+.wrapper {
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 1));
+}
+
+.containerProjects {
+  background: linear-gradient(135deg, var(--gradient-green-dark), var(--gradient-green-light));
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 15%);
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.containerProjects h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: var(--text-color);
+  font-size: 42px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.308);
+}
+
+.projects {
+  display: flex;
+  justify-content: initial;
+  max-width: 950px;
+  height: 500px;
+  border-radius: 40px;
+  background: linear-gradient(270deg, rgba(1, 58, 58, 0.10) 0%, rgba(255, 255, 255, 0.10) 100%);
+  box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.50);
+  transition: opacity 1s ease-in-out;
+  padding: 2rem;
+}
+
+.contentProjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.leftSideContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.leftSideContent h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.leftSideContent p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+.projectsOfCoordination span {
+  display: block;
+  margin: 4px 0;
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 18px;
+}
+
+.projectsOfCoordination span:hover:not(.active) {
+  background-color: rgba(245, 241, 237, 0.10);
+  transition: background-color 0.6s ease-out;
+}
+
+.activeProject {
+  background-color: rgba(245, 241, 237, 0.30);
+  transition: background-color 0.1s ease-in;
+  padding: 10rem;
+}
+
+.activeTab {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.rightSideContent {
+  height: 100%;
+}
+
+.detailsProject {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding: 32px 12px;
+  height: 100%;
+  border-radius: 16px;
+  background-color: rgba(245, 241, 237, 0.10);
+}
+
+.detailsProject h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.detailsProject p {
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.fadeInAnimation {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.tieLocation {
+  position: relative;
+  width: 100%;
+}
+
+.tieLocationRight {
+  position: relative;
+  width: 400px;
+  height: 220px;
+  align-self: flex-end;
+}

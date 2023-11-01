@@ -1,0 +1,130 @@
+body {
+  overflow-x: hidden;
+}
+
+.sectionAboutUs {
+  color: var(--text-color);
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  gap: 6rem;
+}
+
+.sectionAboutUs h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  letter-spacing: 0.04em;
+  text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.308);
+  text-align: center;
+}
+
+.aboutUsContent {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.content {
+  max-width: 35rem;
+}
+
+.content h2 {
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 2rem;
+  text-align: justify;
+  letter-spacing: 0.04em;
+}
+
+.tieCarrousel {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 20;
+}
+
+.tieCarrouselWrap {
+  width: 780px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(12px 8px 20px rgba(0, 0, 0, 0.25));
+  transform: rotate(-10deg);
+}
+
+.tieCarrouselContent {
+  position: absolute;
+  left: 5.5rem;
+  width: 100%;
+  height: 90%;
+  background-color: #252323;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+}
+
+.handlerCarrousel {
+  position: absolute;
+  bottom: 0;
+  right: 9rem;
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dots svg:hover {
+  transform: scale(1.25);
+  transition: all 0.3s ease-in;
+}
+
+.carrouselItems {
+  width: 100%;
+  height: 100%;
+}
+
+.carrouselItems img {
+  width: 100%;
+  height: 100%;
+}
+
+.actionTie {
+  position: relative;
+}
+
+.showImg {
+  display: block;
+  opacity: 1;
+}
+
+.hiddenImg {
+  display: none;
+  opacity: 0;
+}
+
+.fadeInAnimation {
+  animation: fadeIn 0.4s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

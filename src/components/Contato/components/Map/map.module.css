@@ -1,0 +1,6 @@
+.containerMap {
+  width: 600px;
+  border-radius: 24px;
+  height: 100%;
+  overflow: hidden;
+}

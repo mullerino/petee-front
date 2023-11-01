@@ -1,0 +1,53 @@
+/* style.module.css */
+
+.tie-wraper {
+  position: absolute;
+  left: -2rem;
+  top: 30px;
+  z-index: 2;
+  filter: drop-shadow(12px 8px 20px rgba(0, 0, 0, 0.25));
+}
+
+.black-tie {
+  width: 400px;
+  height: 150px;
+  background-color: #003838;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  transform: rotate(-10deg);
+}
+
+.content-tie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+}
+
+.content-tie span {
+  color: #f5f1ed;
+  font-family: Poppins;
+  font-size: 21px;
+  word-wrap: break-word;
+  font-style: normal;
+  width: 80%;
+  font-weight: 600;
+}
+
+.content-tie button a{
+  outline: none;
+  border: none;
+  color: #017d7f;
+  border-radius: 15px;
+  background: #f5f1ed;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content-tie button a:hover {
+  background: rgba(245, 241, 237, 0.85);
+  transition: all 0.5s ease-out;
+}
